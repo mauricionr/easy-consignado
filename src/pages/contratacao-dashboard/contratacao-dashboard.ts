@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {ContratacaoAnalisePage} from '../contratacao-analise/contratacao-analise';
 
 /**
  * Generated class for the ContratacaoDashboardPage page.
@@ -19,6 +20,10 @@ export class ContratacaoDashboardPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ContratacaoDashboardPage');
+  }
+
+  enviarParaAnalise(){
+    this.navCtrl.push(ContratacaoAnalisePage);
   }
 
 }

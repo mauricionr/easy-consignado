@@ -26,11 +26,14 @@ import {JaPossuiCreditoPage} from '../pages/ja-possui-credito/ja-possui-credito'
 import {ContratacaoDetalhePage} from '../pages/contratacao-detalhe/contratacao-detalhe';
 import {ContratacaoDashboardPage} from '../pages/contratacao-dashboard/contratacao-dashboard';
 import {ContratacaoAnexosPage} from '../pages/contratacao-anexos/contratacao-anexos';
+import {ContratacaoAnalisePage} from '../pages/contratacao-analise/contratacao-analise';
 
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
 import { Settings } from '../providers/settings';
 import { User } from '../providers/user';
+import { OneSignal } from '@ionic-native/onesignal';
+
 
 import { Camera } from '@ionic-native/camera';
 import { GoogleMaps } from '@ionic-native/google-maps';
@@ -68,6 +71,13 @@ export function provideSettings(storage: Storage) {
  * can find them. As you add and remove pages, make sure to keep this list up to date.
  */
 let pages = [
+  SimuladorPage,
+  QuantoGanhaPage,
+  JaPossuiCreditoPage,
+  ContratacaoDetalhePage,
+  ContratacaoDashboardPage,
+  ContratacaoAnexosPage,
+  ContratacaoAnalisePage,
   MyApp,
   CardsPage,
   ContentPage,
@@ -83,12 +93,6 @@ let pages = [
   TabsPage,
   TutorialPage,
   WelcomePage,
-  SimuladorPage,
-  QuantoGanhaPage,
-  JaPossuiCreditoPage,
-  ContratacaoDetalhePage,
-  ContratacaoDashboardPage,
-  ContratacaoAnexosPage
 ];
 
 export function declarations() {
@@ -108,6 +112,7 @@ export function providers() {
     GoogleMaps,
     SplashScreen,
     StatusBar,
+    OneSignal,
 
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development

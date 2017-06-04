@@ -15,7 +15,7 @@ import { LoginPage } from '../login/login';
 })
 export class SimuladorPage {
   continue: boolean = false;
-  amount: number = 1000;
+  amount: number = 0;
   periodo: number = 18;
   taxas: any = {
     itau: 1.89,

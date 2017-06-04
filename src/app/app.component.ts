@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { Platform, Nav, Config } from 'ionic-angular';
+import { OneSignal } from '@ionic-native/onesignal';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -34,7 +35,7 @@ export class MyApp {
 
   pages: any[] = []
 
-  constructor(private translate: TranslateService, private platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
+  constructor(private oneSignal: OneSignal, private translate: TranslateService, private platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
     this.initTranslate();
   }
 
@@ -44,6 +45,8 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      this.oneSignal.startInit('8888c742-3570-483c-acd1-9061e7eb877c', '482941778795');
+
     });
   }
 
@@ -51,11 +54,7 @@ export class MyApp {
     // Set the default language for translation strings, and the current language.
     this.translate.setDefaultLang('pt-br');
 
-    if (this.translate.getBrowserLang() !== undefined) {
-      this.translate.use(this.translate.getBrowserLang());
-    } else {
-      this.translate.use('pt-br'); // Set your language here
-    }
+    this.translate.use('pt-br'); // Set your language here
 
     this.translate.get(['BACK_BUTTON_TEXT']).subscribe(values => {
       this.config.set('ios', 'backButtonText', values.BACK_BUTTON_TEXT);

@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
     <div text-center>
         <ion-grid>
             <ion-row>
@@ -43,7 +43,7 @@
             </ion-row>
             <ion-row>
                 <ion-col col-12>
-                    <button ion-button full color="secondary">Contratar crédito</button>
+                    <button ion-button (click)="enviarParaAnalise()" full color="secondary">Contratar crédito</button>
                 </ion-col>
             </ion-row>
         </ion-grid>

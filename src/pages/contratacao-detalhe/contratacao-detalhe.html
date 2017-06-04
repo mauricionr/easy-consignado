@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
     <ion-list>
         <ion-item>
             <ion-label>Mes/Ano</ion-label>
@@ -24,13 +24,15 @@
             <ion-input type="text" disabled></ion-input>
         </ion-item>
         <ion-item>
-            <ion-label>Prazo(meses)</ion-label>
+            <ion-label>Prazo</ion-label>
             <ion-input type="text" disabled></ion-input>
         </ion-item>
         <ion-item>
             <ion-label>Banco</ion-label>
             <ion-input type="text" disabled></ion-input>
         </ion-item>
-        <button ion-button full color="secondary" (click)="contratacaoAnexos()">Confirmar</button>
     </ion-list>
+    <div padding>
+        <button ion-button full color="secondary" (click)="contratacaoAnexos()">Confirmar</button>
+    </div>
 </ion-content>
