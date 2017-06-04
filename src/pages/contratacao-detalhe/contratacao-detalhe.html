@@ -17,30 +17,19 @@
     <ion-list>
         <ion-item>
             <ion-label>Mes/Ano</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input type="text" disabled></ion-input>
         </ion-item>
         <ion-item>
             <ion-label>Valor R$</ion-label>
-            <ion-input type="tel"></ion-input>
+            <ion-input type="text" disabled></ion-input>
         </ion-item>
         <ion-item>
             <ion-label>Prazo(meses)</ion-label>
-            <ion-select [(ngModel)]="prazo">
-                <ion-option value="24">24</ion-option>
-                <ion-option value="36">36</ion-option>
-                <ion-option value="48">48</ion-option>
-                <ion-option value="76">76</ion-option>
-                <ion-option value="96">96</ion-option>
-            </ion-select>
+            <ion-input type="text" disabled></ion-input>
         </ion-item>
         <ion-item>
             <ion-label>Banco</ion-label>
-            <ion-select [(ngModel)]="banco">
-                <ion-option value="itau">Itaú</ion-option>
-                <ion-option value="bradesco">Bradesco</ion-option>
-                <ion-option value="caixa">Caixa economica federal</ion-option>
-                <ion-option value="satander">Santander</ion-option>
-            </ion-select>
+            <ion-input type="text" disabled></ion-input>
         </ion-item>
         <button ion-button full color="secondary" (click)="contratacaoAnexos()">Confirmar</button>
     </ion-list>

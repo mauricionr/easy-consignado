@@ -15,8 +15,22 @@ import { LoginPage } from '../login/login';
 })
 export class SimuladorPage {
   continue: boolean = false;
+  amount: number = 1000;
+  periodo: number = 18;
+  taxas: any = {
+    itau: 1.89,
+    caixa: 1.97,
+    bradesco: 1.91,
+    santander: 1.76
+  }
+
+  selectedBank: string = 'santander'
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  calc(taxa){
+    return this.amount * Math.pow((1 + (taxa/100)), this.periodo);
   }
 
   ionViewDidLoad() {
