@@ -24,10 +24,10 @@ import { TranslateService } from '@ngx-translate/core'
     <ion-list>
       <ion-item>
         <ion-avatar item-left>
-          <img src="assets/img/marty-avatar.png">
+          <img src="assets/img/ana.png">
         </ion-avatar>
-        <h2>Sergio noronha</h2>
-        <p>Oracle</p>
+        <h2>Ana</h2>
+        <p>Professora, Escola municipal de piquete</p>
       </ion-item>
     </ion-list>
       <ion-list>
