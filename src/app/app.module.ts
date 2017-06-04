@@ -20,6 +20,12 @@ import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
+import { SimuladorPage } from '../pages/simulador/simulador';
+import {QuantoGanhaPage} from '../pages/quanto-ganha/quanto-ganha';
+import {JaPossuiCreditoPage} from '../pages/ja-possui-credito/ja-possui-credito';
+import {ContratacaoDetalhePage} from '../pages/contratacao-detalhe/contratacao-detalhe';
+import {ContratacaoDashboardPage} from '../pages/contratacao-dashboard/contratacao-dashboard';
+import {ContratacaoAnexosPage} from '../pages/contratacao-anexos/contratacao-anexos';
 
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
@@ -76,7 +82,13 @@ let pages = [
   SignupPage,
   TabsPage,
   TutorialPage,
-  WelcomePage
+  WelcomePage,
+  SimuladorPage,
+  QuantoGanhaPage,
+  JaPossuiCreditoPage,
+  ContratacaoDetalhePage,
+  ContratacaoDashboardPage,
+  ContratacaoAnexosPage
 ];
 
 export function declarations() {
