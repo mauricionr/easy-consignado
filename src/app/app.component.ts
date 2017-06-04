@@ -21,6 +21,15 @@ import { TranslateService } from '@ngx-translate/core'
     </ion-header>
 
     <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="assets/img/marty-avatar.png">
+        </ion-avatar>
+        <h2>Sergio noronha</h2>
+        <p>Oracle</p>
+      </ion-item>
+    </ion-list>
       <ion-list>
         <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
           {{p.title}}
