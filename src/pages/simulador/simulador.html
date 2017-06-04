@@ -34,10 +34,10 @@
                 <p>Se você ganha a partir de R$ {{amount}} e é funcionário público ou aposentado, veja abaixo algumas possibilidades:</p>
             </ion-row>
             <ion-row (click)="selectedBank = 'caixa'">
-                <ion-col col-8>
+                <ion-col col-7>
                     <ion-label>Caixa Econômica</ion-label>
                 </ion-col>
-                <ion-col col-4>
+                <ion-col col-5>
                     <p>
                         <span>R$ 43,12 / mês</span>
                         <ion-icon *ngIf="selectedBank === 'caixa'" name="checkmark"></ion-icon>
@@ -45,10 +45,10 @@
                 </ion-col>
             </ion-row>
             <ion-row (click)="selectedBank = 'itau'">
-                <ion-col col-8>
+                <ion-col col-7>
                     <ion-label>Itaú</ion-label>
                 </ion-col>
-                <ion-col col-4>
+                <ion-col col-5>
                     <p>
                         <span>R$ 48,00 / mês</span>
                         <ion-icon *ngIf="selectedBank === 'itau'" name="checkmark"></ion-icon>
@@ -56,10 +56,10 @@
                 </ion-col>
             </ion-row>
             <ion-row (click)="selectedBank = 'bradesco'">
-                <ion-col col-8>
+                <ion-col col-7>
                     <ion-label>Bradesco</ion-label>
                 </ion-col>
-                <ion-col col-4>
+                <ion-col col-5>
                     <p>
                         <span>R$ 49,15 / mês</span>
                         <ion-icon *ngIf="selectedBank === 'bradesco'" name="checkmark"></ion-icon>
@@ -67,10 +67,10 @@
                 </ion-col>
             </ion-row>
             <ion-row (click)="selectedBank = 'santander'">
-                <ion-col col-8>
+                <ion-col col-7>
                     <ion-label>Santander</ion-label>
                 </ion-col>
-                <ion-col col-4>
+                <ion-col col-5>
                     <p>
                         <span>R$ 34,30 / mês</span>
                         <ion-icon *ngIf="selectedBank === 'santander'" name="checkmark"></ion-icon>
