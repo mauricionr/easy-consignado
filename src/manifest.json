@@ -1,6 +1,6 @@
 {
     "name": "easyConsignado",
-    "short_name": "Easyconsignado",
+    "short_name": "easyConsig",
     "start_url": "index.html",
     "display": "standalone",
     "icons": [{
