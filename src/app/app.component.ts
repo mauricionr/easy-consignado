@@ -60,7 +60,9 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-      this.oneSignal.startInit('8888c742-3570-483c-acd1-9061e7eb877c', '482941778795');
+      this.oneSignal
+        .startInit('8888c742-3570-483c-acd1-9061e7eb877c', '482941778795')
+        .endInit();
 
     });
   }
