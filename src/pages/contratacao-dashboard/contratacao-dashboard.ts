@@ -23,7 +23,7 @@ export class ContratacaoDashboardPage {
   }
 
   enviarParaAnalise(){
-    this.navCtrl.push(ContratacaoAnalisePage);
+    this.navCtrl.setRoot(ContratacaoAnalisePage);
   }
 
 }

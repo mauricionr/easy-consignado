@@ -6,6 +6,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { FirstRunPage } from '../pages/pages';
+import { ContratacaoDashboardPage } from '../pages/contratacao-dashboard/contratacao-dashboard'
+import { SimuladorPage } from '../pages/simulador/simulador'
+
 import { Settings } from '../providers/providers';
 import { TranslateService } from '@ngx-translate/core'
 
@@ -13,7 +16,7 @@ import { TranslateService } from '@ngx-translate/core'
   template: `<ion-menu [content]="content">
     <ion-header>
       <ion-toolbar>
-        <ion-title>Pages</ion-title>
+        <ion-title>Painel</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -33,7 +36,10 @@ export class MyApp {
 
   @ViewChild(Nav) nav: Nav;
 
-  pages: any[] = []
+  pages: any[] = [
+    { title: 'Dashboard', component: ContratacaoDashboardPage },
+    { title: 'Simulador', component: SimuladorPage },
+  ]
 
   constructor(private oneSignal: OneSignal, private translate: TranslateService, private platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
     this.initTranslate();

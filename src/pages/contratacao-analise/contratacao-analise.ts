@@ -23,7 +23,7 @@ export class ContratacaoAnalisePage {
   }
 
   inicio(){
-    this.navCtrl.push(SimuladorPage);
+    this.navCtrl.setRoot(SimuladorPage);
   }
 
 }
