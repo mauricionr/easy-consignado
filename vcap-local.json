@@ -1,0 +1,45 @@
+{
+
+    "cloudantNoSQLDB": [{
+        "credentials": {
+            "host": "7d3b2521-992a-4339-9159-7a889832e6f5-bluemix.cloudant.com",
+            "password": "fb2bfcf36c29581072dfedf4e2079c945dc4bfedcd473efdaa0117b58c32cf47",
+            "port": 443,
+            "url": "https://7d3b2521-992a-4339-9159-7a889832e6f5-bluemix:fb2bfcf36c29581072dfedf4e2079c945dc4bfedcd473efdaa0117b58c32cf47@7d3b2521-992a-4339-9159-7a889832e6f5-bluemix.cloudant.com",
+            "username": "7d3b2521-992a-4339-9159-7a889832e6f5-bluemix"
+        },
+        "label": "cloudantNoSQLDB",
+        "name": "consignadoapp-cloudantNoSQLDB",
+        "plan": "Lite",
+        "provider": null,
+        "syslog_drain_url": null,
+        "tags": [
+            "data_management",
+            "ibm_created",
+            "lite",
+            "ibm_dedicated_public"
+        ]
+    }],
+    "VCAP_APPLICATION": {
+        "application_id": "10a4122a-2129-4ebb-a689-214f33b4a63b",
+        "application_name": "consignadoapp",
+        "application_uris": [
+            "consignadoapp.mybluemix.net"
+        ],
+        "application_version": "3b0f3278-bffe-4043-a7fe-fa05c149393d",
+        "limits": {
+            "disk": 1024,
+            "fds": 16384,
+            "mem": 512
+        },
+        "name": "consignadoapp",
+        "space_id": "71b12574-7c77-40f7-a90b-e823ee51795f",
+        "space_name": "dev",
+        "uris": [
+            "consignadoapp.mybluemix.net"
+        ],
+        "users": null,
+        "version": "3b0f3278-bffe-4043-a7fe-fa05c149393d"
+
+    }
+}
